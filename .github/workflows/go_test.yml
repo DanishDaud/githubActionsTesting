@@ -1,0 +1,28 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Test CI / CD
+
+on:
+  push:
+    branches: [ main ]
+    
+jobs:
+  build:
+    runs-on: self-hosted
+    env:
+      GOPATH: "/root/go"
+      GO111MODULE: off
+    defaults:
+      run:
+        working-directory: ${{ env.GOPATH }}/src/github.com/${{ github.repository }}
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+      with:
+        path: ${{ env.GOPATH }}/src/github.com/${{ github.repository }}
+
+    - name: Build
+      run: go build -v ./...
+
+    - name: restart
+      run: systemctl restart cicdtest.service
