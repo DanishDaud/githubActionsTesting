@@ -41,6 +41,8 @@ jobs:
       run: export HOME=$HOME
     #- name: Export GO111MODULE
       #run: export GO111MODULE=off
+    - name: go mods
+      run: go mod init
     - name: Build
       run: go build -v ./...
 
