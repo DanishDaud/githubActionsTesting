@@ -42,7 +42,7 @@ jobs:
     #- name: Export GO111MODULE
       #run: export GO111MODULE=off
     - name: go mods
-      run: go mod init
+      run: go mod init /root/actions-runner/test_ci/githubActionsTesting/githubActionsTesting
     - name: Build
       run: go build -v ./...
 
