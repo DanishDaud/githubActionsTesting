@@ -1,0 +1,29 @@
+// here all the dependencies to run this project are listed
+
+go get gopkg.in/mgo.v2
+go get github.com/julienschmidt/httprouter
+go get -u github.com/aws/aws-sdk-go
+go get github.com/rs/cors
+
+# echo library 3.2.3 is installed
+go get -u github.com/labstack/echo
+
+# logrus library 1.0.3 is installed
+go get github.com/sirupsen/logrus
+
+# jwt-go library 3.0.0 is installed
+go get github.com/dgrijalva/jwt-go
+
+# json validation
+go get gopkg.in/go-playground/validator.v9
+go get gopkg.in/validator.v2
+
+# validate phone number
+go get github.com/ttacon/libphonenumber
+
+# convert structure to map
+go get github.com/fatih/structs
+
+# log save to local file system hook
+go get github.com/rifflock/lfshook
+go get github.com/lestrrat/go-file-rotatelogs

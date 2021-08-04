@@ -1,0 +1,6 @@
+//set environment variable with following commands to configure aws sdk
+
+export aws_access_key_id = AKIAJY4N3N5UXZJZXKAA
+export aws_secret_access_key = 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
+export output = json
+export region = us-east-2
