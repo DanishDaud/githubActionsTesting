@@ -39,7 +39,7 @@ jobs:
       
     - name: Export Go gache
       run: export HOME=$HOME
-   # - name: Export GO111MODULE
+   ## - name: Export GO111MODULE
      # run: export GO111MODULE=off
 
     - name: Build
