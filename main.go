@@ -37,7 +37,7 @@ func (cv *CustomValidator) Validate(i interface{}) error {
 	return cv.validator.Struct(i)
 }
 
-//func main() {
+///func main() {
 	// check if all env variables are valid
 	hasValidEnvVariables()
 
