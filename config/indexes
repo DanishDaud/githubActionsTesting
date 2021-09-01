@@ -1,4 +1,0 @@
-#indexes
-
-# unique index for users
-db.users.createIndex({"email" : 1},{unique : true, background : true})
