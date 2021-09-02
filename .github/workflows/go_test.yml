@@ -34,11 +34,11 @@ jobs:
         GOCACHE: "/root/.cache/go-build"
         GO111MODULE: off
 
-   # - name: Export Go gache
-      #run: export GOCACHE=$GOCACHE
+    - name: Export Go cache
+      run: export GOCACHE=$GOCACHE
       
-   # - name: Export Go gache
-      #run: export HOME=$HOME
+    - name: Export Go HOME
+      run: export HOME=$HOME
    ## - name: Export GO111MODULE
      # run: export GO111MODULE=off
 
