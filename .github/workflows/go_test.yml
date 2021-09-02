@@ -9,8 +9,8 @@ on:
 jobs:
   build:
     runs-on: self-hosted
-  #  env:
-  #    GOPATH: "/root/go"
+    env:
+      GOPATH: "/root/go"
   #    GO111MODULE: off
   #  defaults:
      # run:
