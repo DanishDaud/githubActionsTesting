@@ -43,8 +43,8 @@ jobs:
      # run: export GO111MODULE=off
 
     - name: Build
-      #run: go build -v ./...
-      run: go build
+      run: go build -v ./...
+      #run: go build
     - name: Reload Daemon
       run: systemctl daemon-reload
       
