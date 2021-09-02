@@ -27,12 +27,12 @@ jobs:
       uses: actions/setup-go@v2
       with:
         go-version: 1.16.x
-      env :
-        GOPATH: "/root/go"
-        HOME: "/root"
-        GOROOT: "/root/usr/local/go"
-        GOCACHE: "/root/.cache/go-build"
-        GO111MODULE: off
+     # env :
+        #GOPATH: "/root/go"
+        #HOME: "/root"
+       # GOROOT: "/root/usr/local/go"
+        #GOCACHE: "/root/.cache/go-build"
+        #GO111MODULE: off
 
    # - name: Export Go gache
       #run: export GOCACHE=$GOCACHE
