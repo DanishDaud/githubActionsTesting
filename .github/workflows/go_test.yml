@@ -43,6 +43,11 @@ jobs:
     - name: Expor Go Path
       run: export GOPATH=$GOPATH
       
+    - run: |
+        export PATH=$PATH:$(go env GOPATH)/bin
+        go get -u golang.org/x/lint/golint
+        golint -set_exit_status ./...
+      
    ## - name: Export GO111MODULE
      # run: export GO111MODULE=off
 
