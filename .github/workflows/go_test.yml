@@ -26,34 +26,34 @@ jobs:
     - name: Set up Go
       uses: actions/setup-go@v2
       with:
-        go-version: 1.16.x
-      env :
-        GOPATH: "/root/go"
-        HOME: "/root"
-        GOROOT: "/root/usr/local/go"
-        GOCACHE: "/root/.cache/go-build"
-        GO111MODULE: off
+        go-version: 1.16.6
+  #    env :
+  #      GOPATH: "/root/go"
+  #      HOME: "/root"
+  #      GOROOT: "/root/usr/local/go"
+  #      GOCACHE: "/root/.cache/go-build"
+  #      GO111MODULE: off
 
-    - name: Export Go cache
-      run: export GOCACHE=$GOCACHE
+   # - name: Export Go cache
+   #   run: export GOCACHE=$GOCACHE
       
-    - name: Export Go HOME
-      run: export HOME=$HOME
+   # - name: Export Go HOME
+   #   run: export HOME=$HOME
       
-    - name: Expor Go Path
-      run: export GOPATH=$GOPATH
+   # - name: Expor Go Path
+   #   run: export GOPATH=$GOPATH
       
-    - run: |
-        export PATH=$PATH:$(go env GOPATH)/bin
-        go get -u golang.org/x/lint/golint
-        golint -set_exit_status ./...
+   # - run: |
+   #     export PATH=$PATH:$(go env GOPATH)/bin
+   #     go get -u golang.org/x/lint/golint
+    #    golint -set_exit_status ./...
       
    ## - name: Export GO111MODULE
      # run: export GO111MODULE=off
 
     - name: Build
       #run: go build -v ./...
-      run: go build
+      run: /usr/local/go/bin/go build
     - name: Reload Daemon
       run: systemctl daemon-reload
       
