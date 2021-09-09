@@ -77,4 +77,4 @@ jobs:
         # comma-separated string, send email to
         to: ddaud@gomarkho.com
         # from email name
-        from: Test CICD Info
+        from: Test CICD
